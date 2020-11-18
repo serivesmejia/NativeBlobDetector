@@ -1,4 +1,4 @@
 before_install:
  - chmod +x gradlew
 install:
- - ./gradlew :core:clean :core:build -x externalNativeBuildRelease -x externalNativeBuildDebug-x mergeReleaseNativeLibs -x mergeDebugNativeLibs
+ - ./gradlew :core:clean :core:build -x externalNativeBuildRelease -x externalNativeBuildDebug -x mergeReleaseNativeLibs -x mergeDebugNativeLibs
