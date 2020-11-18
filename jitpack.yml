@@ -1,2 +1,2 @@
-before_install:
- - sdkmanager "ndk;21.0.6113669"
+script:
+ -./gradlew build -x mergeReleaseNativeLibs
