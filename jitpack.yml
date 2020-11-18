@@ -1,2 +1,2 @@
 install:
- -./gradlew build -x :core:mergeReleaseNativeLibs
+ - ./gradlew :core:clean :core:build -x :core:mergeReleaseNativeLibs
