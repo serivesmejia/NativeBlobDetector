@@ -1,4 +1,5 @@
 before_install:
  - chmod +x gradlew
 install:
- - ./gradlew :core:clean :core:build -x externalNativeBuildRelease -x externalNativeBuildDebug -x mergeReleaseNativeLibs -x mergeDebugNativeLibs -x :core:externalNativeBuildCleanDebug -x :core:externalNativeBuildCleanRelease
+ - sdkmanager "ndk;21.0.6113669"
+ - ./gradlew :core:clean :core:build
